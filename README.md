@@ -72,15 +72,41 @@ Using the same parameters from the decision tree to run the random forest.
 
 ### K-Nearest Neighbors
 Testing for optimal k-value returns a value of 19.
+
 ![k-value](https://github.com/estieve/soccer_analysis/blob/main/images/KNN_k.PNG)
 
 #### Results
 ![KNN](https://github.com/estieve/soccer_analysis/blob/main/images/KNN.PNG)
 
+### Neural Network
+Grid search was used to optimize the parameters for the MLP Classifier. 
+
+![loss](https://github.com/estieve/soccer_analysis/blob/main/images/loss_curve.PNG)
+
+#### Results
+![NN](https://github.com/estieve/soccer_analysis/blob/main/images/NN.PNG)
+
 ### Assessment
 The models seem to have trouble classifying draws, in all of the models we see this category throwing off the accuracy. This is worth investigating more closely.
 
 ## EDA - Draws
+With the noticable ambiguity in our models related to draws it is beneficial to look at the data around the three outcome categories. Using the EDA tool (https://github.com/estieve/soccer_analysis/blob/main/EDA.ipynb) will help to visualize more information on what may be happening here. In this process the event data is modified to simply examine counts for each event in a given game without taking location into account. The purpose here is to see how each event stacks up accross the various outcomes and determine where the ambiguity with draws may be coming from.
+
+This chart shows the frequency of specific events for all three categories plotted on top of each other. We can see that there are times where draws closely mirror wins and others where they closely mirror losses. This is likely why the models are struggling with classifying draws, they tend to not have unique characteristics. 
+
+![EDA](https://github.com/estieve/soccer_analysis/blob/main/images/EDA.PNG)
+
+## Predictive Analysis - Remove Draws
+Taking the evaluation above into account, the next step is to remove the draws and re-run the machine learning models to see if there is an improvement with draws removed from the results. The same processes were run to optimize the models.
+
+### Results 
+
+![no_Draw](https://github.com/estieve/soccer_analysis/blob/main/images/no_draw.PNG)
+
+These results are much better, and it is apparent that the neural network is the optimal model for predictive classification on this dataset.
+
+## Challenges
+The data utilized here is very complex, and as such there is a high likelyhood that it isn't being utilized to its full potential in this analysis. Handling the spatial aspects of the dataset is a unique challenge and adds nuance that really needs to be leveraged for any assessments. Further research and experimentation would be likely to result in improvements to how this aspect of the data is utilized in the project. There is also the challenge around draws and how best to classify these, it is possible that anyone wanting to perform similar assessments would prefer not to predict such occurances. How often do teams really go into games asking whether they have the potential of drawing? Most likely the question is "are we going to win or lose"? Either way, more investigation into the ambiguity around this is definitely in order.
 
 ## References
 Pappalardo et al., (2019) A public data set of spatio-temporal match events in soccer competitions, Nature Scientific Data 6:236, https://www.nature.com/articles/s41597-019-0247-7
