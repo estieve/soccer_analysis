@@ -15,15 +15,19 @@ The goal is to leverage this information to analyze in-game tactics and also pre
 ### Source Data
 The data is stored in a relational database and each table is downloaded from the source as a JSON file. In order to utilize it we will need to assemble the tables into a single dataframe. The Compile code handles this process (https://github.com/estieve/soccer_analysis/blob/main/Compile.ipynb) and outputs a single csv (soccer.csv) that can be utilized for the remainder of the processes. 
 
-### Updating
-A key part of the analysis is based on the available spatial information, this is stored as a dictionary in the "positions" field that includes the start and end grid location based on a percentage of the field from (0,0). This can be parsed into two columns ('x' and 'y'), with only the start location utilized. Then to better group this information and make it more friendly for the machine learning process the field is divided into grids and each event is assigned to one of these grids based on where the starting coordinates fall.
+### Updating Columns
+A key part of the analysis is based on the available spatial information, this is stored as a dictionary in the "positions" field that includes the start and end grid location based on a percentage of the field from (0,0). This can be parsed into two columns ('x' and 'y'), with only the start location utilized. It is important to note that the (x,y) values in this field are based on a percentage of the field from the origin (0,0). This needs to be converted to a value between 0 and 120 for the 'x' and 0 and 80 for the 'y'. Then to better group this information and make it more friendly for the machine learning process the field is divided into grids and each event is assigned to one of these grids based on where the starting coordinates fall.
 
 ![position](https://github.com/estieve/soccer_analysis/blob/main/images/position.PNG)
 
 ![grid](https://github.com/estieve/soccer_analysis/blob/main/images/grid.PNG)
 
 ## Visualization
+The first analysis involves taking the (x,y) coordinates to create a visualization of in-game tactics. For this scenario the data for a single team during a single game is extracted from our dataframe. Then a centroid is calculated for each player which can be displayed on a visualization of the pitch.
 
+![centroid](https://github.com/estieve/soccer_analysis/blob/main/images/centroid.png)
+
+![tactics](https://github.com/estieve/soccer_analysis/blob/main/images/tactics.png)
 
 ## Predictive Analysis
 
