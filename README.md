@@ -108,6 +108,11 @@ These results are much better, and it is apparent that the neural network is the
 ## Challenges
 The data utilized here is very complex, and as such there is a high likelyhood that it isn't being utilized to its full potential in this analysis. Handling the spatial aspects of the dataset is a unique challenge and adds nuance that really needs to be leveraged for any assessments. Further research and experimentation would be likely to result in improvements to how this aspect of the data is utilized in the project. There is also the challenge around draws and how best to classify these, it is possible that anyone wanting to perform similar assessments would prefer not to predict such occurances. How often do teams really go into games asking whether they have the potential of drawing? Most likely the question is "are we going to win or lose"? Either way, more investigation into the ambiguity around this is definitely in order.
 
+## Conclusions
+The analysis performed here is a great start, but we are only scratching the surface of what can be accomplished with this incredibly detailed dataset. The opportunities to leverage things such as player and team quality would be significant. No two teams are created equally, and the same can be said for players. Having some sort of metric that allows us to incorporate these features could lead to more significant results. Another thought is to produce a value representing home-field-advantage, there is significant evidence to support the assumption that playing at a home field in front of supporters has a positive outcome on a team's success. The last important piece would be to incorporate team play insights to properly predict results as the season progresses. Previous outcomes could be compiled into a metric as the season goes on to further enhance predictions.
+
+There is a lot to be gained from complex analytics provided in this dataset, and the opportunities to leverage the data for insight are enormous. 
+
 ## References
 Pappalardo et al., (2019) A public data set of spatio-temporal match events in soccer competitions, Nature Scientific Data 6:236, https://www.nature.com/articles/s41597-019-0247-7
 
