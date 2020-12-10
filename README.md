@@ -23,7 +23,7 @@ A key part of the analysis is based on the available spatial information, this i
 ![grid](https://github.com/estieve/soccer_analysis/blob/main/images/grid.PNG)
 
 ## Visualization
-The first analysis involves taking the (x,y) coordinates to create a visualization of in-game tactics. For this scenario the data for a single team during a single game is extracted from our dataframe. Then a centroid is calculated for each player which can be displayed on a visualization of the pitch.
+The first analysis involves taking the (x,y) coordinates to create a visualization of in-game tactics. For this scenario the data for a single team during a single game is extracted from our dataframe. Then a centroid is calculated for each player which can be displayed on a visualization of the pitch. This can then be leveraged to compare opposing teams in the same game to see how their tactics complement the on-field action.
 
 ### Centroids
 ![centroid](https://github.com/estieve/soccer_analysis/blob/main/images/centroid.png)
@@ -32,7 +32,7 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 ![tactics](https://github.com/estieve/soccer_analysis/blob/main/images/tactics.png)
 ![formation](https://github.com/estieve/soccer_analysis/blob/main/images/formation.png)
 
-This can then be leveraged to compare opposing teams in the same game to see how their tactics complement the on-field action.
+-------------------------------------------------------------------------------------------------------------------------
 ### Tottenham tactics
 ![Tott](https://github.com/estieve/soccer_analysis/blob/main/images/Tott.png)
 ### Arsenal tactics
