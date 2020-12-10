@@ -18,7 +18,7 @@ The data is stored in a relational database and each table is downloaded from th
 ### Updating
 A key part of the analysis is based on the available spatial information, this is stored as a dictionary in the "positions" field that includes the start and end grid location based on a percentage of the field from (0,0). This can be parsed into two columns ('x' and 'y'), with only the start location utilized. Then to better group this information and make it more friendly for the machine learning process the field is divided into grids and each event is assigned to one of these grids based on where the starting coordinates fall.
 
-<img src="https://github.com/estieve/soccer_analysis/blob/main/images/position.PNG" width="225" height="175" >
+![position](https://github.com/estieve/soccer_analysis/blob/main/images/position.PNG)
 
 ![grid](https://github.com/estieve/soccer_analysis/blob/main/images/grid.PNG)
 
