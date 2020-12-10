@@ -5,14 +5,11 @@
 https://figshare.com/collections/Soccer_match_event_dataset/4415000
 
 ## Purpose
-Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe. This data includes a record for every on-field event during each game througout the season. Events include features such as passes, fouls, shots, duels, and touches.
+Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe. This data includes a record for every on-field event during each game througout the season. Events include features such as passes, fouls, shots, duels, and touches:
 
 <img src="https://github.com/estieve/soccer_analysis/blob/main/images/event_mapping.PNG" width="300" height="400" >
-![event mapping](https://github.com/estieve/soccer_analysis/blob/main/images/event_mapping.PNG)
 
-Leverage data to analyze tactics
-Predict match outcomes later in the season
-
+The goal is to leverage this information to analyze in-game tactics and also predict match outcomes (wins/losses).
 
 ## Compile Data
 
