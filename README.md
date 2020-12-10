@@ -33,7 +33,9 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 ![formation](https://github.com/estieve/soccer_analysis/blob/main/images/formation.png)
 
 This can then be leveraged to compare opposing teams in the same game to see how their tactics complement the on-field action.
+### Tottenham tactics
 ![Tott](https://github.com/estieve/soccer_analysis/blob/main/images/Tott.png)
+### Arsenal tactics
 ![Ars](https://github.com/estieve/soccer_analysis/blob/main/images/Ars.png)
 
 ## Predictive Analysis
