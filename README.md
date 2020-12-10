@@ -13,7 +13,7 @@ Sports analytics have been gaining traction over the last several years to suppo
 The goal is to leverage this information to analyze in-game tactics and also predict match outcomes (wins/losses).
 
 ## Code
-There are several collections of code that were used to execute this process. They were kept separate to maximize the ability to keep the processing organized into a handful of "tools". The order of activity for the tools being run based to follow the path of the following discussion is:
+There are several collections of code that were used to execute this process. They were kept separate to maximize the ability to keep the processing organized into a handful of "tools". The order of activity for the tools being run in order to follow the path of this discussion is:
 ### 1. Compile (https://github.com/estieve/soccer_analysis/blob/main/Compile.ipynb)
 ### 2. Predictive_Data_Prep (https://github.com/estieve/soccer_analysis/blob/main/Predictive_Data_Prep.ipynb)
 ### 3. Visualization (https://github.com/estieve/soccer_analysis/blob/main/Visualization.ipynb)
