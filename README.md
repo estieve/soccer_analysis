@@ -87,7 +87,7 @@ Grid search was used to optimize the parameters for the MLP Classifier.
 ![NN](https://github.com/estieve/soccer_analysis/blob/main/images/NN.PNG)
 
 ### Assessment
-The models seem to have trouble classifying draws, in all of the models we see this category throwing off the accuracy. This is worth investigating more closely.
+The models seem to have trouble classifying draws, in every one we see this category throwing off the accuracy. Further analysis would be beneficial here.
 
 ## EDA - Draws
 With the noticable ambiguity in our models related to draws it is beneficial to look at the data around the three outcome categories. Using the EDA tool (https://github.com/estieve/soccer_analysis/blob/main/EDA.ipynb) will help to visualize more information on what may be happening here. In this process the event data is modified to simply examine counts for each event in a given game without taking location into account. The purpose here is to see how each event stacks up accross the various outcomes and determine where the ambiguity with draws may be coming from.
