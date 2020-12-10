@@ -28,8 +28,13 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 ### Centroids
 ![centroid](https://github.com/estieve/soccer_analysis/blob/main/images/centroid.png)
 
-### Visualize tactics
+### Visualize tactics and compare to the official formation
 ![tactics](https://github.com/estieve/soccer_analysis/blob/main/images/tactics.png)
+![formation](https://github.com/estieve/soccer_analysis/blob/main/images/formation.png)
+
+This can then be leveraged to compare opposing teams in the same game to see how their tactics complement the on-field action.
+![Tott](https://github.com/estieve/soccer_analysis/blob/main/images/Tott.png)
+![Ars](https://github.com/estieve/soccer_analysis/blob/main/images/Ars.png)
 
 ## Predictive Analysis
 
