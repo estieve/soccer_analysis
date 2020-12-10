@@ -28,8 +28,9 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 ### Centroids
 ![centroid](https://github.com/estieve/soccer_analysis/blob/main/images/centroid.png)
 
-### Visualize tactics and compare to the official formation
+### Visualize tactics
 ![tactics](https://github.com/estieve/soccer_analysis/blob/main/images/tactics.png)
+### Compare to the official formation
 ![formation](https://github.com/estieve/soccer_analysis/blob/main/images/formation.png)
 
 -------------------------------------------------------------------------------------------------------------------------
