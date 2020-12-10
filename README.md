@@ -25,8 +25,10 @@ A key part of the analysis is based on the available spatial information, this i
 ## Visualization
 The first analysis involves taking the (x,y) coordinates to create a visualization of in-game tactics. For this scenario the data for a single team during a single game is extracted from our dataframe. Then a centroid is calculated for each player which can be displayed on a visualization of the pitch.
 
+### Centroids
 ![centroid](https://github.com/estieve/soccer_analysis/blob/main/images/centroid.png)
 
+### Visualize tactics
 ![tactics](https://github.com/estieve/soccer_analysis/blob/main/images/tactics.png)
 
 ## Predictive Analysis
