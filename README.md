@@ -5,20 +5,21 @@
 https://figshare.com/collections/Soccer_match_event_dataset/4415000
 
 ## Purpose
-Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe. This data includes a record for every on-field event during each game througout the season. Events include features such as passes, fouls, shots, duels, and touches:
+Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe that covers every game from the 2017-2018 season. This data contains a record for every on-field event, including the type of event (pass, foul, shot) and the location where it happened on the field. 
 
+### Samples of events
 <img src="https://github.com/estieve/soccer_analysis/blob/main/images/event_mapping.PNG" width="300" height="400" >
 
 The goal is to leverage this information to analyze in-game tactics and also predict match outcomes (wins/losses).
 
 ## Code
 There are several collections of code that were used to execute this process. They were kept separate to maximize the ability to keep the processing organized into a handful of "tools". The order of activity for the tools being run based to follow the path of the following discussion is:
-### 1. Compile
-### 2. Predictive_Data_Prep
-### 3. Visualization
-### 4. EDA
-### 5. Machine_Learning
-### 6. Machine_Learning_noDraw
+### 1. Compile (https://github.com/estieve/soccer_analysis/blob/main/Compile.ipynb)
+### 2. Predictive_Data_Prep (https://github.com/estieve/soccer_analysis/blob/main/Predictive_Data_Prep.ipynb)
+### 3. Visualization (https://github.com/estieve/soccer_analysis/blob/main/Visualization.ipynb)
+### 4. EDA (https://github.com/estieve/soccer_analysis/blob/main/EDA.ipynb)
+### 5. Machine_Learning (https://github.com/estieve/soccer_analysis/blob/main/Machine_Learning.ipynb)
+### 6. Machine_Learning_noDraw (https://github.com/estieve/soccer_analysis/blob/main/Machine_Learning_noDraw.ipynb)
 
 ## Compile Data
 ### Source Data
@@ -30,6 +31,9 @@ A key part of the analysis is based on the available spatial information, this i
 ![position](https://github.com/estieve/soccer_analysis/blob/main/images/position.PNG)
 
 ![grid](https://github.com/estieve/soccer_analysis/blob/main/images/grid.PNG)
+
+## Predictive Data Preparation
+The output from the compile step provides us with a baseline dataframe that can be leveraged for the visualizations and EDA, but in order to leverage the data for machine learning additional data engineering is required. 
 
 ## Visualization
 The first analysis involves taking the (x,y) coordinates to create a visualization of in-game tactics. For this scenario the data for a single team during a single game is extracted from our dataframe. Then a centroid is calculated for each player which can be displayed on a visualization of the pitch. This can then be leveraged to compare opposing teams in the same game to see how their tactics complement the on-field action.
