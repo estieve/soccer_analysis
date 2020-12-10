@@ -11,6 +11,15 @@ Sports analytics have been gaining traction over the last several years to suppo
 
 The goal is to leverage this information to analyze in-game tactics and also predict match outcomes (wins/losses).
 
+## Code
+There are several collections of code that were used to execute this process. They were kept separate to maximize the ability to keep the processing organized into a handful of "tools". The order of activity for the tools being run based to follow the path of the following discussion is:
+### 1. Compile
+### 2. Predictive_Data_Prep
+### 3. Visualization
+### 4. EDA
+### 5. Machine_Learning
+### 6. Machine_Learning_noDraw
+
 ## Compile Data
 ### Source Data
 The data is stored in a relational database and each table is downloaded from the source as a JSON file. In order to utilize it we will need to assemble the tables into a single dataframe. The Compile code handles this process (https://github.com/estieve/soccer_analysis/blob/main/Compile.ipynb) and outputs a single csv (soccer.csv) that can be utilized for the remainder of the processes. 
@@ -36,8 +45,11 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 -------------------------------------------------------------------------------------------------------------------------
 ### Tottenham tactics
 ![Tott](https://github.com/estieve/soccer_analysis/blob/main/images/Tott.png)
+-------------------------------------------------------------------------------------------------------------------------
 ### Arsenal tactics
 ![Ars](https://github.com/estieve/soccer_analysis/blob/main/images/Ars.png)
+
+This provides unique insight as to how the play on the field evolved and where the action was happening for the various players. Arsenal appears to have played a more spread out and attacking style, while Tottenham was very condenced in the middle and attacking from the left wing. The visualization code (https://github.com/estieve/soccer_analysis/blob/main/Visualization.ipynb) allows for a user to enter a team name, game week, and game half to then return a dataframe of centroids that can be graphed on the pitch visualization. The flip_field function then allows to chart the opposing team in a way that they are flipped relative to the initial team. This optimizes the ability to assess the impact each team's on field tactis has on the other.
 
 ## Predictive Analysis
 
