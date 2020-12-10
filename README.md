@@ -44,6 +44,9 @@ The first analysis involves taking the (x,y) coordinates to create a visualizati
 ![formation](https://github.com/estieve/soccer_analysis/blob/main/images/formation.png)
 
 -------------------------------------------------------------------------------------------------------------------------
+### Compare Tactics
+For this sample we are looking at a game that occured between Tottenham Hot Spur and Arsenal during week 12.
+
 ### Tottenham tactics
 ![Tott](https://github.com/estieve/soccer_analysis/blob/main/images/Tott.png)
 -------------------------------------------------------------------------------------------------------------------------
