@@ -5,12 +5,12 @@
 https://figshare.com/collections/Soccer_match_event_dataset/4415000
 
 ## Purpose
-Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe that covers every game from the 2017-2018 season. This data contains a record for every on-field event, including the type of event (pass, foul, shot) and the location where it happened on the field. This was all collected through a process involving individuals watching matches and creating a record for each event based on these specific metrics.
+Sports analytics have been gaining traction over the last several years to support improved decision making. This can include insight into team building, tactics, and game preparation. For this assessment I aquired a large collection of spatio-temporal data on soccer (football) matches in five top-flight professional leagues in Europe that covers every game from the 2017-2018 season. This data contains a record for every on-field event, including the type of event (pass, foul, shot) and the location where it happened on the field. This was all collected through a process involving individuals watching matches and creating a record for each event based on these specific metrics. The goal of this project is to leverage this information to analyze in-game tactics and predict match outcomes (wins/losses).
 
 ### Samples of event categories
 <img src="https://github.com/estieve/soccer_analysis/blob/main/images/event_mapping.PNG" width="300" height="400" >
 
-The goal is to leverage this information to analyze in-game tactics and also predict match outcomes (wins/losses).
+
 
 ## Code
 There are several collections of code that were used to execute this process. They were kept separate to maximize the ability to keep the processing organized into a handful of "tools". The order of activity for the tools being run in order to follow the path of this discussion is:
