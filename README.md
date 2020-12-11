@@ -100,7 +100,7 @@ This chart shows the frequency of specific events for all three categories plott
 ![EDA](https://github.com/estieve/soccer_analysis/blob/main/images/EDA.PNG)
 
 ## Predictive Analysis - Remove Draws
-Taking the evaluation above into account, the next step is to remove the draws and re-run the machine learning models to see if there is an improvement with draws removed from the results. The same processes were run to optimize the models.
+Taking the evaluation above into account, the next step is to remove the draws and re-run the machine learning models to see if there is an improvement with these records removed from the dataframe. The same processes were run to optimize the models.
 
 ### Results 
 
