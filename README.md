@@ -1,4 +1,4 @@
-# soccer_analysis
+# soccer_analytics
 
 
 ## Data source:
